@@ -1,3 +1,8 @@
 markdown: rdiscount
 pygments: true
-permalink: /:title
+safe: true
+lsi: false
+pygments: true
+server: false
+auto: false
+watch: false
