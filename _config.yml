@@ -3,3 +3,4 @@ pygments: true
 safe: true
 lsi: false
 pygments: true
+base_url: /home/dexter/Projects/electronicsdesign.nl/_site
