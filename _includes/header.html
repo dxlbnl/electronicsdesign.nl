@@ -1,0 +1,49 @@
+<header>
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="242" width="800">
+   
+        <defs>
+            <image id='crooked_image' x="0" y="0" width="800" height="85" xlink:href="images/circuitgraphicclipped.png" /> 
+            <rect id='crooked_back' width="800" height="85" x="0" y="0"/>  
+            <path id='crooked_path' d="M 800,0 l 0,85 -800,0 0,-33 130,0 57,-28 200,0 40,-24 z"></path>
+            <path id='crooked_line' d="M 0,54 l  130,0 57,-28 200,0 40,-24 373, 0"></path>
+            <!-- <path id='simple_line' -->
+
+            <rect id='footer_back' width="800" height="30" x="0" y="0"/>  
+            <path id='footer_line' d="M 0,0 l 800,0"></path>
+            
+            <clipPath clipPathUnits="userSpaceOnUse" id="crooked_clip">
+                <use xlink:href="#crooked_path">
+            </clipPath>
+            <clipPath clipPathUnits="userSpaceOnUse" id="footer_clip">
+                <use xlink:href="#footer_back">
+            </clipPath>
+            
+            <filter id="blur">
+                <feGaussianBlur stdDeviation="2.9" />
+            </filter>
+        </defs>
+
+        <g id='crooked'>
+            <use class='mask' transform='translate(0, 126)' xlink:href="#crooked_back" clip-path="url(#crooked_clip)"/>
+            <use class='image' transform='translate(0, 126)' xlink:href="#crooked_image" clip-path="url(#crooked_clip)"/>
+            <use class='line'  transform='translate(0, 126)'xlink:href='#crooked_line' clip-path="url(#crooked_clip)">
+        </g>
+
+        <g id="logo" transform="scale(2)">
+            <path transform='translate(26, -98)' id="face" d="M 8.3343,120.67016 0,123.12001 l 31.4388,15.6482 31.3764,-15.6482 -8.3253,-2.44985 -23.0511,11.36541 -23.1045,-11.36541 z m 47.075,14.17414 -8.788,4.42812 0,4.61497 -10.9502,5.46323 0,8.75836 8.5478,3.06083 0,-8.90073 11.1904,-5.31789 0,-12.10689 z m -47.9233,0.003 0,12.10392 11.0214,5.32086 0,8.90073 8.6397,-3.06083 0,-8.76133 -10.9235,-5.46323 0,-4.61497 -8.7376,-4.42515 z m 0,20.62501 0,13.72332 L 31.4388,181 l 23.9705,-11.80437 0,-13.72332 -8.788,4.38067 0,5.88735 -15.1825,6.82755 -15.2152,-6.82755 0,-5.88735 -8.7376,-4.38067 z"/>
+            <text x="95" y="60" class='bekking'>bekking</text>
+            <text x="96" y="68">electronics design</text>
+        </g>
+
+
+        <g id='menubar'>
+            <rect x="0" y="211" height="10" width="800" class="menubar_background"/>
+        </g>
+    </svg>
+    <ul class='menu'>
+        <li><a href='index.html'>home</a></li>
+        <li><a href=''>portfolio</a></li>
+        <li><a href='blog.html'>blog</a></li>
+        <li><a href='contact.html'>contact</a></li>
+    </ul>
+</header> 
